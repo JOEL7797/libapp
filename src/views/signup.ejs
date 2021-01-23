@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title><%=title%></title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="/public/css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="/public/css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+<header class="navbar navbar-bright navbar-fixed-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Home</a>
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <%for(i=0;i<nav.length;i++){%>
+        <li>
+          <a href="<%=nav[i].link%>"><%=nav[i].name%></a> 
+        </li>
+        <%}%>
+      </ul>
+      <ul class="nav navbar-right navbar-nav">
+        <a href="/login"><button type="button" class="btn btn-primary">Login</button></a>
+        <a href="/signup"> <button type="button" class="btn btn-success">Sign-up</button></a>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  
+</div>
+
+
+<div class="container mart">
+  
+    
+      
+     
+  
+          
+    <div class="mar-l ">
+        <form class="form-signin  bord  bg-white rounded" action="/login" onsubmit="return validate1()"><br>
+          <h1 class="h3 mb-3 font-weight-normal">Please Sign-up</h1><br>
+          <label for="email " class="sr-only ">Email address</label>
+          <input type="text" id="email" class="form-control  " placeholder="Email address"><br>
+          <label for="phonenumber " class="sr-only ">Phone-number</label>
+          <input type="text" id="phone" class="form-control  " placeholder="Phone number">
+          <br>
+          <label for="inputPassword" class="sr-only">Password</label>
+          <input type="password" id="pass" class="form-control " placeholder="Password" onkeyup="return passwordChanged()">
+          <span id="strength" >Type Password</span>
+          
+          <button class="btn btn-lg btn-primary  mat btn-block " type="submit">Register</button>
+          
+        </form>
+        </div>
+          
+        
+          
+       
+                                                                                       
+	                                                
+                                                      
+   	
+</div>
+                                                
+                                                                                
+<hr>
+
+
+<hr>
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-inline">
+          <li><i class="icon-facebook icon-2x"></i></li>
+          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><i class="icon-google-plus icon-2x"></i></li>
+          <li><i class="icon-pinterest icon-2x"></i></li>
+        </ul>
+        
+      </div>
+      <div class="col-sm-6">
+          <p class="pull-right">Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a></p>      
+      </div>
+    </div>
+  </div>
+</footer>
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="/public/js/bootstrap.min.js"></script>
+        <script src="/public/js/script.js"></script>
+	</body>
+</html>
