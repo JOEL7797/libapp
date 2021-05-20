@@ -10,7 +10,7 @@ const nav= [
         link:'/authors',name:'Author'
     },
     {
-        link:'/admin',name:'ADD DATA'
+        link:'/admin',name:'Add Data'
     }
     
 ];
@@ -20,7 +20,7 @@ const authorsRouter = require('./src/routes/authorRoutes')(nav);
 const adminRouter = require('./src/routes/adminRoutes')(nav);
 
 
-
+app.use(express.urlencoded({extended:true}));
 app.use('/public',express.static(__dirname +'/public'));
 app.set('view engine','ejs');
 app.set('views','./src/views'); 

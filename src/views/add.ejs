@@ -45,7 +45,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-7">
-        <h1><%=title%>
+        <h1>Add New Book/Author
           <p class="lead"></p>
         </h1>
       </div>
@@ -86,7 +86,7 @@
           <!--/stories-->
           <h3>Add new Book</h3>
           <div class="row">    
-            <form action="/admin/add" method="GET">
+            <form action="/admin/add" method="POST">
                 Title: <input type="text" name="title"><br>
                 Author: <input type="text" name="author"><br>
                 Genre: <input type="text" name="genre"><br>
@@ -98,7 +98,7 @@
           <hr>
           <h3>Add new Author</h3>
           <div class="row">    
-            <form action="/admin/adder" method="GET">
+            <form action="/admin/adder" method="POST">
                 Name: <input type="text" name="name"><br>
                 Image: <input type="file" name="image"><br>
                 <button type="submit"> ADD </button><br>

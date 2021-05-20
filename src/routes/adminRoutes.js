@@ -11,21 +11,21 @@ function adminrou(nav){
         nav
     })
 })
-    adminRouter.get('/add',function(req,res){
+    adminRouter.post('/add',function(req,res){
         var item= {
-            title : req.query.title,
-            author : req.query.author,
-            genre : req.query.genre,
-            image : req.query.image
+            title : req.body.title,
+            author : req.body.author,
+            genre : req.body.genre,
+            image : req.body.image
         }
     var book = Bookdata(item);
     book.save();
     res.redirect('/books');
 });
-adminRouter.get('/adder',function(req,res){
+adminRouter.post('/adder',function(req,res){
     var item= {
-        name : req.query.name,
-        image : req.query.image
+        name : req.body.name,
+        image : req.body.image
     }
 var author = Authordata(item);
 author.save();

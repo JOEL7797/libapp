@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://userone:userone@cluster0.322k9.mongodb.net/LIBRARYAPP?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://user7797:user7797@joel7797.9zkd6.mongodb.net/LIBRARY?retryWrites=true&w=majority');
 const Schema = mongoose.Schema;
 
 const AuthorSchema = new Schema({

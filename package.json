@@ -7,12 +7,12 @@
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Akshay Gopal",
+  "author": "Joel Ivan",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.5",
     "express": "^4.17.1",
-    "mongoose": "^5.11.13",
+    "mongoose": "^5.12.10",
     "nodemon": "^2.0.6"
   }
 }
